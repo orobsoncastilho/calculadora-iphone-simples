@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --cor-laranja: #ff9900;
+    --cor-cinzaClaro:  #adad85;
+    --cor-cinzaEscuro: #5c5c3d;
+    --cor-black: #000000;
+    --cor-white: #ffffff;
+    --cor-azul: #4da3ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/background.png);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--cor-black);
+    width: 270px;
+    height: 480px;
+    border-radius: 25px;
+    border: 5px solid var(--cor-cinzaEscuro);
+    padding: 6px;
+    box-shadow: 10px 10px 15px var(--cor-black);
+}
+
+button {
+    color: var(--cor-white);
+    background-color: var(--cor-cinzaEscuro);
+    font-size: 25px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:active {
+    color: var(--cor-black);
+    background-color: var(--cor-cinzaClaro);
+}
+
+#display {
+    color: var(--cor-white);
+    text-align: end;
+    font-size: 50px;
+
+    background-color: var(--cor-black);
+    width: 95%;
+    height: 30%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 75px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    margin-left: 6px;
+}
+
+#zero {
+    text-align: start;
+    padding-left: 20px;
+    width: 113px;
+    height: 50px;
+}
+
+.formatarUm {
+    color: var(--cor-black);
+    background-color: var(--cor-cinzaClaro);
+}
+
+.formatarUm:active {
+    background-color: var(--cor-white);
+}
+
+.formatarDois {
+    background-color: var(--cor-laranja);
+}
+
+.formatarDois:active {
+    color: var(--cor-laranja);
+    background-color: var(--cor-white);
+}
+
+@media (max-height: 500px) {
+    main {
+        width: 480px;
+        height: 270px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #display {
+        padding: 0;
+        padding-right: 20px;
+        margin-top: 156px;
+    }
+
+    #botao {
+        width: 310px;
+        height: 220px;
+    }
+
+    button,
+    #zero {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        text-align: center;
+    }
+
+    #zero {
+        width: 84px;
+    }
+
+    .formatarUm {
+        color: var(--cor-white);
+        background-color: var(--cor-laranja);
+        float: right;
+    }
+
+    .formatarUm:active {
+        color: var(--cor-laranja);
+    }
+
+    .formatarDois {
+        float: right;
+    }
+}
