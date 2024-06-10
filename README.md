@@ -1,2 +1,2 @@
 # CALCULADORA SIMPLES
-# Calculador criada para fins de prática
+## Calculador criada para fins de prática
